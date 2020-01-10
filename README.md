@@ -19,4 +19,4 @@ _Setting.js_ is the presentational component displaying the score, time and pair
 1. Download the repositery on your computer
 2. Open _index.html_ and enjoy! 
 
-Since we used BootstrapCDN, you must have internet connection when playing otherwise the css from Bootstrap won't load and the gamefield will not be placed correctly. 
+Since we used BootstrapCDN, you must have internet connection when opening _index.html_ otherwise the css from Bootstrap won't load and the gamefield will not be placed correctly. 
