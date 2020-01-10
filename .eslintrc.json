@@ -1,0 +1,41 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+    "extends": "standard",
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "no-shadow": [
+            "error",
+            {
+                "builtinGlobals": true,
+                "hoist": "functions",
+                "allow": [
+                    "event"
+                ]
+            }
+        ],
+        "camelcase": [
+            "error",
+            {
+                "properties": "always"
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.js"
+            ]
+        }
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jquery": true
+    }
+}

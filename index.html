@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/gamefield.js"></script>
+    <script src="js/settings.js"></script>
+
+    <title>Jeu de Mémoire</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="w-100"></div>
+        <div class="row">
+            <div id="header" class="col border">
+                <div class="pokemon-theme">
+                    <img src="images/themepika.jpg" class="pokemon-1" alt="" />
+                    <h1 class="display-4">
+                        Memory Game
+                    </h1>
+                </div>
+                <div class="pokemon-content">
+                    <img src="images/pokemon-classic.jpg" class="pokemon-1" alt="" />
+                </div>
+            </div>
+
+            <div id="gameField" class="col border"></div>
+            <div id="settings" class="col border">
+            </div>
+
+        </div>
+    </div>
+    <script>
+        CreateUI.init(document.getElementById('settings'))
+        GameBuilder.init(document.getElementById('gameField'))
+    </script>
+</body>
+
+</html>

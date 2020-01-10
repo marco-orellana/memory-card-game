@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 21vh;
+    width: 9vw;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+.margin-top, button {
+    margin-top: 15px;
+}
+
+/* entire container, keeps perspective */
+
+.flip-container {
+    perspective: 1000px;
+    margin-right: 15px;
+}
+
+/* flip the pane when hovered */
+
+.flipper.flip {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    height: 21vh;
+    width: 9vw;
+}
+
+/* flip speed goes here */
+
+.flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    position: relative;
+    height: 21vh;
+    width: 9vw;
+}
+
+/* hide back of pane during swap */
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.cards-container {
+    display: flex;
+    text-align: center;
+    height: 22.6vh;
+}
+
+.cards-container:first-of-type {
+    margin-top: 15px;
+}
+
+.w-100 {
+    height: 4vh;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon-theme, .pokemon-theme img {
+    width: 27vw;
+    height: 25vh;
+    cursor: default;
+    border-bottom: 2px lightgray solid;
+}
+
+.pokemon-content, .pokemon-content img {
+    width: 27vw;
+    height: 40vh;
+    cursor: default;
+}
