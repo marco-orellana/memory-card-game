@@ -5,7 +5,7 @@ Bootstrap was used but only css.
 
 I worked on _setting.js_ (wich is the UI) and i helped making the algorithm on shuffling the card and making sure that there isn't more than 2 of the same card on the field (algoritmh in _gamefield.js_). 
 I also worked on keeping the highest score after each new game. If you close the tab or the browser, the highscore will disapear.
-We had 1 week to make the project.
+This project was done in 1 week.
 
 
 
